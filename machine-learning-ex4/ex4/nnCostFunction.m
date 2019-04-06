@@ -78,7 +78,7 @@ for i = 1:m
     predictions = I(:);
     % --forward propagation for prediction#end--
     h_theta = A3;
-    yi = (1:num_labels==y(i));
+    yi = (1:num_labels==y(i)); 这里有点疑问
     J = J + ((-yi*log(h_theta)) - (1-yi)*log(1-h_theta)); 
 end
 J = J / m;
